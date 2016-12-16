@@ -68,7 +68,9 @@
         "&country_id=",
         country
       )
-      #url <- utils::URLencode(url)
+      #httr::set_config(httr::verbose())
+      #httr::reset_config()
+      url <- utils::URLencode(url)
       
       if (verbose) {
         message(url)
